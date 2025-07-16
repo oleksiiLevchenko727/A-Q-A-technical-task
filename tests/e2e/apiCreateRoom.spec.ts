@@ -2,7 +2,6 @@ import { test, expect, APIResponse } from '@playwright/test';
 
 test.describe('Room API', () => {
   test('Create a room and verify existence', async ({ request }) => {
-    // Should to create a room with the name "121" and verify that it exists in the list of rooms
     const createResponse: APIResponse = await request.post(
       'https://automationintesting.online/api/room',
       {
