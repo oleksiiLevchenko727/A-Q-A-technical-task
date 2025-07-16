@@ -1,0 +1,57 @@
+---------------------------------------------------------------------------------------------------------------------------------
+Title: Check that the room can be booked with valid data
+
+1. Go to https://automationintesting.online/.
+2. Should choose valid Check-In data: 05.08.2025.
+3. Should choose valid Check-Out data: 06.08.2025).
+5. Click on "Check Availibility" button.
+6. Should choose "Double" room and click on the "Book now" button.
+7. Click on "Reserve Now" button.
+8. Set the correct first name: "Oleksii" into "Firstname" field.
+9. Set the correct last name: "Levchenko" into "Lastname" field.
+10. Set the correct email: "o.levchenko@neolit.ua" into "Email" field.
+11. Set the correct phone number: "380961686620" into "Phone" field.
+12. Click on the "Reserve Now" button.
+ 
+Expected result: Must appear a "Return Home" button and a massage: "Booking Confirmed" and must displayed interval correctly according to your choice.
+---------------------------------------------------------------------------------------------------------------------------------
+
+Title: Check that the room can’t be booked with invalid data
+
+1. Go to https://automationintesting.online/.
+2. Should choose invalid Check-In data: 01.01.2000.
+3. Should choose invalid Check-Out data: 31.12.2099).
+5. Click on "Check Availibility" button.
+6. Should choose the "Double" room and click on the "Book now" button.
+7. Click on "Reserve Now" button.
+8. Set the incorrect first name: "1./$~" into "Firstname" field.
+9. Set the incorrect last name: "23%2/F" into "Lastname" field.
+10. Set the incorrect email: "``````@```.```" into "Email" field.
+11. Set the correct phone number: "321````fR.%$" into "Phone" field.
+12. Click on the "Reserve Now" button.
+
+Expected result: Incorrect check-in/check-out data, first name, last name, email, phone number.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Title: Check that the earlier booked dates show as Unavailable
+
+1. Go to https://automationintesting.online/.
+2. Should choose invalid Check-In data: 18/07/2025.
+3. Should choose invalid Check-Out data: 20/07/2025).
+5. Click on "Check Availibility" button.
+6. Should choose Single room and click on the "Book now" button.
+7. Click on "Reserve Now" button.
+8. Set the first name: "Oleksii" into "Firstname" field.
+9. Set the last name: "Levchenko" into "Lastname" field.
+10. Set the email: "o.levchenko@neolit.ua" into "Email" field.
+11. Set the phone number: "380961686620" into "Phone" field.
+12. Click on the "Reserve Now" button.
+13. Click on the "Return home" button.
+14. Should choose invalid Check-In data: 21/07/2025.
+15. Should choose invalid Check-Out data: 22/07/2025).
+16. Click on "Check Availibility" button.
+17. Should choose Single room and click on the "Book now" button.
+18. Execute test to check the booked rooms 18/07/2025-20/07/2025.
+
+Expected result: Rooms, which have already been booked, are covering of blue string with text "Unavailable".
