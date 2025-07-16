@@ -25,4 +25,6 @@ Location of page file: tests/pages/UnavailableRoomPage.ts
 4. Should create and delete a room using the API
 
 Location of spec file: tests/e2e/apiCreateRoom.spec.ts
+
+Have a nice day)
 -------------------------------------------------------------------------------------------------------------
