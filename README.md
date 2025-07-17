@@ -26,5 +26,5 @@ Location of page file: tests/pages/UnavailableRoomPage.ts
 
 Location of spec file: tests/e2e/apiCreateRoom.spec.ts
 
-Have a nice day)
+
 -------------------------------------------------------------------------------------------------------------
