@@ -1,5 +1,6 @@
 ---------------------------------------------------------------------------------------------------------------------------------
-Title: Check that the room can be booked with valid data
+ID: 001
+Title: Check that the room can be booked with valid data 
 
 1. Go to https://automationintesting.online/.
 2. Should choose valid Check-In data: 05.08.2025.
@@ -15,8 +16,8 @@ Title: Check that the room can be booked with valid data
  
 Expected result: Must appear a "Return Home" button and a massage: "Booking Confirmed" and must displayed interval correctly according to your choice.
 ---------------------------------------------------------------------------------------------------------------------------------
-
-Title: Check that the room can’t be booked with invalid data
+ID: 002
+Title: Check that the room can’t be booked with invalid data  
 
 1. Go to https://automationintesting.online/.
 2. Should choose invalid Check-In data: 01.01.2000.
@@ -33,7 +34,7 @@ Title: Check that the room can’t be booked with invalid data
 Expected result: Incorrect check-in/check-out data, first name, last name, email, phone number.
 
 ---------------------------------------------------------------------------------------------------------------------------------
-
+ID: 003
 Title: Check that the earlier booked dates show as Unavailable
 
 1. Go to https://automationintesting.online/.
